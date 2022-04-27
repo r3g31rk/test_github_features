@@ -1,11 +1,9 @@
 name: Error Form
 
-#description: |
-#  This report helps to declare errors (such as bad links, typos, ...).
-#  To avoid any confusion, please fill one report per error.
 description: |
-  Links? Screenshots? References?
-  Anything that provide more context about the error will help to fix it!
+  This report helps to declare errors (such as bad links, typos, ...).
+  To avoid any confusion, please fill one report per error.
+
 title: "[Error]: any_explicit_title" # mettre un titre clair
 
 labels: ["invalid"] # ajouter un label
@@ -23,13 +21,14 @@ body:
       description: Please check in this repo if an issue already exists for the error you spotted.
       options:
       - label: I searched the issues of this repo and no one exists for the error I spotted.
-        required: true
+    validations:
+      required: true
 
 # WHERE
   - type: dropdown
     id: location_macro
     attributes:
-      label: Error's micro location
+      label: Error's macro location
       description: On which platform(s) did you spot the error?
       multiple: true
       options:
@@ -44,8 +43,10 @@ body:
   - type: textarea
     id: location_micro
     attributes:
-      label: Error's macro location
-      description: What is the complete name of the file (with extension) where you spotted the error? (one filename per line if multiple files are impacted)
+      label: Error's micro location
+      description: |
+        What is the complete name, with extension, of the file where you spotted the error?
+        (one filename per line if multiple files are impacted)
       placeholder: ex. D-POO-100_day01-exercices.pdf
     validations:
       required: true
@@ -77,7 +78,7 @@ body:
       description: |
         Links? Screenshots? References?
         Anything that provide more context about the error will help to fix it!
-        Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+        Tip: You can attach images and files by clicking this area and then dragging files in.
     validations:
       required: false
       
