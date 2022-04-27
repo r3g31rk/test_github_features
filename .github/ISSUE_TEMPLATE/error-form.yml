@@ -1,6 +1,6 @@
 name: Error Form
 
-description: |+
+description: |
   This Form will declare an error (such as bad link, typo, wrong result,...) you have spotted.
   To avoid any confusion, please fill one report per error.
 
