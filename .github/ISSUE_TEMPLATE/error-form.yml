@@ -1,18 +1,18 @@
 name: Error Form
 
 description: |
-  This Form will declare an error (such as bad link, typo, wrong result,...) you have spotted.
-  
-  
+  This report is to declare errors (such as bad links, typos, ...).
+  It will contribute to fix them and improve the pedagogical content.
   To avoid any confusion, please fill one report per error.
 
-title: "[ERROR]: your_explicit_title" # mettre un titre clair
+title: "[Error]: <title>" # mettre un titre clair
 
 labels: ["invalid"] # ajouter un label
 
 assignees: # assigner les membres de CONTEX
   - r3g31rk
 
+      
 body:
 # ALREADY SEEN
   - type: checkboxes
@@ -40,24 +40,22 @@ body:
     validations:
       required: true
 
-  - type: textarea
+  - type: input
     id: location_micro
     attributes:
       label: Error's micro location
-      description: What is the complete name of the file (with extension) where you spotted the error?
-      (one per line if many file impacted)
-      placeholder: ex. D-POO-100_day01-exercices.pdf
+      description: What is the complete name of the file (with extension) where you spotted the error? (separate with comma if many)
+      placeholder: ex. D-POO-100_day01-exercices.pdf, B-CNA-410_Trade_not4students.xlsx
     validations:
       required: true
       
 # WHAT
-  - type: textarea
+  - type: input
     id: description
     attributes:
       label: What did you see?
       description: Please give a clear and concise description of what you're experiencing. 
-      placeholder: ex. Page 42, I read "pain au chocolat"
-
+      placeholder: ex. On page 42 of the file mentionned above, I read "pain au chocolat"
     validations:
       required: true
       
@@ -88,17 +86,48 @@ body:
     attributes:
       label: Contact details
       description: Except through github, how can we get in touch with you if we need more info?
-      placeholder: ex. firstname.lastname@epitech.eu
+      placeholder: ex. firstname.lastname@epitech.smthg
     validations:
       required: false
 
 
+
+
+
 # WHY
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
         
   - type: markdown
     attributes:
-      value: "### Thanks for taking the time to fill out this form! It will contribute to improve the quality of the pedagogical content delivered."
+      value: "## Thanks for taking the time to fill out this bug report!"
+
+  - type: markdown
+    attributes:
+      value: '## Thanks for taking the time to fill out this bug report!'
 
 
 
+
+
+
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
 
