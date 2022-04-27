@@ -4,7 +4,7 @@ description: |
   This report helps to declare errors (such as bad links, typos, ...).
   To avoid any confusion, please fill one report per error.
 
-title: "[Error]: an_explicit_title" # mettre un titre clair
+title: "[Error]: any_explicit_title" # mettre un titre clair
 
 labels: ["invalid"] # ajouter un label
 
@@ -42,8 +42,8 @@ body:
   - type: textarea
     id: location_micro
     attributes:
-      label: Where did you get that?
-      description: What is the complete name of the file (with extension) where you spotted the error? (separate with comma if many)
+      label: Error's macro location
+      description: What is the complete name of the file (with extension) where you spotted the error? (one filename per line if multiple files are impacted)
       placeholder: ex. D-POO-100_day01-exercices.pdf, B-CNA-410_Trade_not4students.xlsx
     validations:
       required: true
@@ -52,9 +52,9 @@ body:
   - type: input
     id: description
     attributes:
-      label: What did you see?
+      label: Error's description
       description: Please give a clear and concise description of what you're experiencing. 
-      placeholder: ex. On page 42 of the file mentionned above, I read "pain au chocolat"
+      placeholder: ex. Page 42, I read "pain au chocolat"
     validations:
       required: true
       
@@ -63,7 +63,7 @@ body:
     id: potential_fix
     attributes:
       label: What did you expect?
-      description: Please give a clear and concise description of what you expected.
+      description: Please give a clear and concise description of a potential fix.
       placeholder: ex. It should be "chocolatine".
     validations:
       required: false
@@ -75,7 +75,7 @@ body:
       description: |
         Links? Screenshots? References? 
         Anything that will give us more context about the error you spotted will help us to solve it!
-
+        Choubidou
         Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
     validations:
       required: false
