@@ -1,9 +1,11 @@
 name: Error Form
 
+#description: |
+#  This report helps to declare errors (such as bad links, typos, ...).
+#  To avoid any confusion, please fill one report per error.
 description: |
-  This report helps to declare errors (such as bad links, typos, ...).
-  To avoid any confusion, please fill one report per error.
-
+  Links? Screenshots? References?
+  Anything that provide more context about the error will help to fix it!
 title: "[Error]: any_explicit_title" # mettre un titre clair
 
 labels: ["invalid"] # ajouter un label
@@ -27,7 +29,7 @@ body:
   - type: dropdown
     id: location_macro
     attributes:
-      label: Error's macro location
+      label: Error's micro location
       description: On which platform(s) did you spot the error?
       multiple: true
       options:
@@ -44,7 +46,7 @@ body:
     attributes:
       label: Error's macro location
       description: What is the complete name of the file (with extension) where you spotted the error? (one filename per line if multiple files are impacted)
-      placeholder: ex. D-POO-100_day01-exercices.pdf, B-CNA-410_Trade_not4students.xlsx
+      placeholder: ex. D-POO-100_day01-exercices.pdf
     validations:
       required: true
       
