@@ -101,7 +101,5 @@ body:
   - type: markdown
     id: thanks
     attributes:
-      value: |
-      "### Thanks for taking the time to fill out this form!"
-      "It will contribute to improve the pedagogical content delivered."
+      value: "### Thanks for taking the time to fill out this form! It will contribute to improve the pedagogical content delivered."
 
