@@ -1,11 +1,10 @@
 name: Error Form
 
 description: |
-  This report is to declare errors (such as bad links, typos, ...).
-  It will contribute to fix them and improve the pedagogical content.
+  This report helps to declare errors (such as bad links, typos, ...).
   To avoid any confusion, please fill one report per error.
 
-title: "[Error]: <title>" # mettre un titre clair
+title: "[Error]: an_explicit_title" # mettre un titre clair
 
 labels: ["invalid"] # ajouter un label
 
@@ -19,9 +18,9 @@ body:
     id: seen
     attributes:
       label: Are you the first one?
-      description: Please check if an issue already exists for the error you spotted.
+      description: Please check in this repo if an issue already exists for the error you spotted.
       options:
-      - label: I have searched the open issues of this repo and no one exists for the error I spotted.
+      - label: I searched the issues of this repo and no one exists for the error I spotted.
         required: true
 
 # WHERE
@@ -40,10 +39,10 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: textarea
     id: location_micro
     attributes:
-      label: Error's micro location
+      label: Where did you get that?
       description: What is the complete name of the file (with extension) where you spotted the error? (separate with comma if many)
       placeholder: ex. D-POO-100_day01-exercices.pdf, B-CNA-410_Trade_not4students.xlsx
     validations:
@@ -97,17 +96,7 @@ body:
 # WHY
   - type: markdown
     attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
-        
-  - type: markdown
-    attributes:
-      value: "## Thanks for taking the time to fill out this bug report!"
-
-  - type: markdown
-    attributes:
-      value: '## Thanks for taking the time to fill out this bug report!'
-
+      value: "## Thanks for taking the time to fill out this bug report! It will contribute to fix them and improve the pedagogical content."
 
 
 
