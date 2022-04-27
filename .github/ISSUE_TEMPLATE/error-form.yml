@@ -99,7 +99,9 @@ body:
 
 # WHY
   - type: markdown
+    id: thanks
     attributes:
-      value: "### Thanks for taking the time to fill out this bug report! 
-      It will contribute to fix them and improve the pedagogical content."
+      value: |
+      "### Thanks for taking the time to fill out this form!"
+      "It will contribute to improve the pedagogical content delivered."
 
