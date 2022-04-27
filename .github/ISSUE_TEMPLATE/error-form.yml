@@ -42,9 +42,7 @@ body:
     id: location_micro
     attributes:
       label: Error's micro location
-      description: >+
-      What is the complete name of the file (with extension) where you spotted the error?
-      
+      description: What is the complete name of the file (with extension) where you spotted the error?
       (one per line if many file impacted)
       placeholder: ex. D-POO-100_day01-exercices.pdf
     validations:
