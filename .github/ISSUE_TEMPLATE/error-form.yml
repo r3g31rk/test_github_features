@@ -1,7 +1,7 @@
 name: Error Form
 
-description: |
-  This Form will declare an error (such as bad link, typo, wrong result,...) you have spotted.  
+description: |+
+  This Form will declare an error (such as bad link, typo, wrong result,...) you have spotted.
   To avoid any confusion, please fill one report per error.
 
 title: "[ERROR]: your_explicit_title" # mettre un titre clair
@@ -42,8 +42,11 @@ body:
     id: location_micro
     attributes:
       label: Error's micro location
-      description: What is the complete name of the file (with extension) where you spotted the error? (separate with comma if many)
-      placeholder: ex. D-POO-100_day01-exercices.pdf, B-CNA-410_Trade_not4students.xlsx
+      description: >+
+      What is the complete name of the file (with extension) where you spotted the error?
+      
+      (one per line if many file impacted)
+      placeholder: ex. D-POO-100_day01-exercices.pdf
     validations:
       required: true
       
@@ -53,7 +56,7 @@ body:
     attributes:
       label: What did you see?
       description: Please give a clear and concise description of what you're experiencing. 
-      placeholder: ex. On page 42 of the file mentionned above, I read "pain au chocolat"
+      placeholder: ex. Page 42, I read "pain au chocolat"
 
     validations:
       required: true
