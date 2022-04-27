@@ -79,7 +79,13 @@ body:
         Links? Screenshots? References?
         Anything that provide more context about the error will help to fix it!
         Tip: You can attach images and files by clicking this area and then dragging files in.
-      placeholder: ex. According to [this wikipedia page](https://en.wikipedia.org/wiki/Pain_au_chocolat), the alternative names for "chocolatine" are Chocolate bread, chocolate croissant, couque au chocolat, pain au chocolat, petit pain.
+      placeholder: |
+        ex. According to [this wikipedia page](https://en.wikipedia.org/wiki/Pain_au_chocolat), the alternative names for "chocolatine" are
+        - chocolate bread
+        - chocolate croissant
+        - couque au chocolat
+        - pain au chocolat
+        - petit pain
     validations:
       required: false
       
