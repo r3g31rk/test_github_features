@@ -42,7 +42,7 @@ jobs:
     - name: Markup Link Checker (mlc)
       uses: becheran/mlc@v0.15.4
       with:
-        args: **.md
+        args: *.md
 
   linkChecker:
     runs-on: ubuntu-latest
