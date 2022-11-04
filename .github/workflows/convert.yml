@@ -20,29 +20,6 @@ jobs:
       uses: actions/checkout@master
     - name: makdown link checker 2
       uses: gaurav-nelson/github-action-markdown-link-check@v1
-  
-  mlc:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Markup Link Checker (mlc)
-      uses: becheran/mlc@v0.15.4
-      with:
-        args: ./README.md
-  mlc2:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Markup Link Checker (mlc)
-      uses: becheran/mlc@v0.15.4
-      with:
-        paths: '**.md'
-
-  mlc3:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Markup Link Checker (mlc)
-      uses: becheran/mlc@v0.15.4
-      with:
-        args: *.md
 
   linkChecker:
     runs-on: ubuntu-latest
