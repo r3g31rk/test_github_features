@@ -33,6 +33,16 @@ jobs:
     steps:
     - name: Markup Link Checker (mlc)
       uses: becheran/mlc@v0.15.4
+      with:
+        paths: '**.md'
+
+  mlc3:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Markup Link Checker (mlc)
+      uses: becheran/mlc@v0.15.4
+      with:
+        args: **.md
 
   linkChecker:
     runs-on: ubuntu-latest
