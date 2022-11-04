@@ -13,12 +13,6 @@ on:
     paths:
       - '**.md'
 jobs:
-#  markdown-link-check:
-#    runs-on: ubuntu-latest
-#    steps:
-#    - uses: actions/checkout@master
-#    - uses: gaurav-nelson/github-action-markdown-link-check@v1
-
   linkChecker:
     runs-on: ubuntu-latest
     steps:
@@ -29,7 +23,7 @@ jobs:
         uses: lycheeverse/lychee-action@v1.5.2
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
+  
       - name: Create Issue From File
         if: env.lychee_exit_code != 0
         uses: peter-evans/create-issue-from-file@v4
