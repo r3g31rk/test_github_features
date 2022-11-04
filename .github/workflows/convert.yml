@@ -13,44 +13,29 @@ on:
     paths:
       - '**.md'
 jobs:
-  markdown-link-check:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - uses: gaurav-nelson/github-action-markdown-link-check@v1
+#  markdown-link-check:
+#    runs-on: ubuntu-latest
+#    steps:
+#    - uses: actions/checkout@master
+#    - uses: gaurav-nelson/github-action-markdown-link-check@v1
 
   linkChecker:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: create file list
-        id: files_list
-        run: echo "::set-output name=md_files::$(find . -name '*.md' -printf '"%p" ')"
-      - name: Get repo name
-        id: repository_name
-        run: echo "::set-output name=repo_name::$(echo ${{ github.repository }} | awk -F / '{print $2}' | sed -e 's/:refs//')"
 
       - name: Link Checker
         id: lychee
         uses: lycheeverse/lychee-action@v1.5.2
-        with:
-          args: ${{ steps.files_list.outputs.md_files }}
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Create Issue From File
         if: env.lychee_exit_code != 0
-        uses: peter-evans/create-issue-from-file@v4
+        uses: 
+          - peter-evans/create-issue-from-file@v4
+          - actions/checkout@v3
         with:
           title: Link Checker Report
           content-filepath: ./lychee/out.md
           labels: report, automated issue
-
-      - name: converting .md to .pdf
-        uses: docker://epitechcontent/subject_template
-        with:
-          args: ${{ steps.files_list.outputs.md_files }}
-      - uses: actions/upload-artifact@master
-        with:
-          name: '${{ steps.repository_name.outputs.repo_name }}'
-          path: '**/*.pdf'
