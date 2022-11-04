@@ -16,6 +16,39 @@ jobs:
   markdown-link-check:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - uses: gaurav-nelson/github-action-markdown-link-check@v1
-    
+    - name: makdown link checker 1
+      uses: actions/checkout@master
+    - name: makdown link checker 2
+      uses: gaurav-nelson/github-action-markdown-link-check@v1
+  
+  mlc:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Markup Link Checker (mlc)
+      uses: becheran/mlc@v0.15.4
+      with:
+        args: ./README.md
+  mlc2:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Markup Link Checker (mlc)
+      uses: becheran/mlc@v0.15.4
+
+  linkChecker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Link Checker
+        id: lychee
+        uses: lycheeverse/lychee-action@v1.5.1
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: Create Issue From File
+        if: env.lychee_exit_code != 0
+        uses: peter-evans/create-issue-from-file@v4
+        with:
+          title: Link Checker Report
+          content-filepath: ./lychee/out.md
+          labels: report, automated issue
