@@ -15,10 +15,12 @@ This repo is a Proof Of Concept of several Github's features
 
 what I tested:
 
-- some premade actions from the github 
+- some premade actions from the github
   - mlc => could not make it work properly
-  - [lychee](https://github.com/lycheeverse/lychee-action)
-  - [makdown link checker](https://github.com/tcort/markdown-link-check)
+  - [lychee-action](https://github.com/lycheeverse/lychee-action)
+  - [makdown link checker](https://github.com/gaurav-nelson/github-action-markdown-link-check)
+  - [linkinator-action](https://github.com/JustinBeckwith/linkinator-action)
+
 
 
 ## auto create ISSUE
