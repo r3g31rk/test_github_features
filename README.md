@@ -16,6 +16,6 @@ This repo is a Proof Of Concept of several Github's features
 what I tested:
 
 - some premade actions from the github 
-  - mlc
-  - lychee
-  - makdown link checker
+  - mlc => could not make it work properly
+  - [lychee](https://github.com/lycheeverse/lychee-action)
+  - [makdown link checker](https://github.com/tcort/markdown-link-check)
