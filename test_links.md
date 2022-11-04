@@ -3,7 +3,9 @@
 
 ## part 1
 
-- [is this a valid extra-markdown link](www.google.com)
+- [0](https://www.google.com/)
+- [1](www.google.com)
+- [2](google.com)
 
 ### part 1a
 
@@ -11,12 +13,9 @@
 
 ### part 1b
 
-- [is this a valid intra-markdown link](#part-1)
+- [3](#part-1)
 
 ## part 2
-
-- [is this a valid extra-markdown link](google.com)
-
 
 ### part 2a
 
