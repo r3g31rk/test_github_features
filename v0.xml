@@ -1,5 +1,6 @@
-<xsl:stylesheet version="1.0">
-<?xml version="1.0" encoding="ISO-8859-1"?>
-  <?xml-stylesheet type="text/xsl" href="disclosure.xsl"?>
-    <catalog></catalog>
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:template match="/fruits">
+	<xsl:value-of select="system-property('xsl:vendor')"/>
+  </xsl:template>
 </xsl:stylesheet>
