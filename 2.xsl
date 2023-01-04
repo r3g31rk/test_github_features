@@ -1,9 +1,9 @@
 <xsl:stylesheet version=”1.0″ xmlns:xsl=”http://www.w3.org/1999/XSL/Transform” xmlns:php=”http://php.net/xsl”>
   <xsl:template match=”/”>
     <html>
-      <body>
-        <h2>My CD Collection</h2>
+      <footer>
+        <h1>gfhxhcvbhghdfghdfghgdfhcfghdfghdfghdfghdfghdfghdfghdfghdfon</h1>
       </body>
-    </html>
+    </footer>
   </xsl:template>
 </xsl:stylesheet>
