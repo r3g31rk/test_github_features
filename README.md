@@ -8,6 +8,31 @@ This repo is a Proof Of Concept of several Github's features
   - [Upgrade request](.github/ISSUE_TEMPLATE/upgrade-request.md)
 
 
+  
+## Test table
+
+
++-------------------------+-------------------------------------+
+|Characteristic           |Value                                |
++========================:+====================================:+
+|Project name             |Taxi Driver                          |
++-------------------------+-------------------------------------+
+|Suggested Team size      |~4 students                          |
++-------------------------+-------------------------------------+
+|Theme                    |Machine (Reinforcment) Learning      |
++-------------------------+-------------------------------------+
+|Suggested tool           |                                     |
++-------------------------+-------------------------------------+
+|Suggested language       |Python or R                          |
++-------------------------+-------------------------------------+
+|Specific hardware needed |no                                   |
++-------------------------+-------------------------------------+
+|Specific resources needed|no                                   |
++-------------------------+-------------------------------------+
+
+&nbsp;
+
+
 
 ## WIP
 
