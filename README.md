@@ -11,17 +11,35 @@ This repo is a Proof Of Concept of several Github's features
   
 ## Test table
 
-| Characteristic            | Value                                |  
-| ------:                   |  ------:                             |  
-| Project name              | Taxi Driver                          |  
-| Suggested Team size       | ~4 students                          |  
-| Theme                     | Machine (Reinforcment) Learning      |  
-| Suggested tool            |                                      |  
-| Suggested language        | Python or R                          |  
-| Specific hardware needed  | no                                   |  
-| Specific resources needed | no                                   |  
+
+|Characteristic           |Value              |
+|---:                     |:-                 |
+|Project name             |Kubi               |
+|Suggested Team size      |~4 students        |
+|Theme                    |devOps             |
+|Suggested tool           |Kubernetes         |
+|Suggested language       |                   |
+|Specific hardware needed |no                 |
+|Specific resources needed|a webApp           |
+|                         |some VMs           |
+|                         |MS security labs   |
+|                         |Azure credits ?    |
 
 &nbsp;
+
+
+| Characteristic            | Value            |
+| ---:                      | :--------------  |
+| Project name              | Kubi             |
+| Suggested Team size       | ~4 students      |
+| Theme                     | devOps           |
+| Suggested tool            | Kubernetes       |
+| Suggested language        |                  |
+| Specific hardware needed  | no               |
+| Specific resources needed | a webApp         |
+|                           | some VMs         |
+|                           | MS security labs |
+|                           | Azure credits ?  |
 
 
 |Characteristic           |Value                                |
