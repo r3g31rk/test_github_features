@@ -25,7 +25,7 @@ This repo is a Proof Of Concept of several Github's features
 
 
 |Characteristic           |Value                                |
-|------------------------:|:------------------------------------|
+|---:                     |:-                                   |
 |Project name             |Kubi                                 |
 |Suggested Team size      |~4 students                          |
 |Theme                    |devOps                               |
