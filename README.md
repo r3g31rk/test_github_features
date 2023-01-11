@@ -24,6 +24,21 @@ This repo is a Proof Of Concept of several Github's features
 &nbsp;
 
 
+|Characteristic           |Value                                |
+|------------------------:|:------------------------------------|
+|Project name             |Kubi                                 |
+|Suggested Team size      |~4 students                          |
+|Theme                    |devOps                               |
+|Suggested tool           |Kubernetes                           |
+|Suggested language       |                                     |
+|Specific hardware needed |no                                   |
+|Specific resources needed|a webApp                             |
+|                         |some VMs                             |
+|                         |MS security labs                     |
+|                         |Azure credits ?                      |
+
+
+
 
 ## WIP
 
